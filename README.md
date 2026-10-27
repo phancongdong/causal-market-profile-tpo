@@ -8,7 +8,7 @@
 
 A high-performance, strictly causal Python implementation of **J. Peter Steidlmayer's Market Profile (CBOT, 1986)**, **Time-Price Opportunity (TPO)** bracket matrix construction, and the canonical **Dual-Expansion 70% Value Area Algorithm**.
 
-Designed for quantitative researchers, algorithmic traders, and institutional backtesting engines requiring **mathematically rigorous Value Area boundaries (POC, VAH, VAL)**, **Auction Market Theory structural classification (D, P, b, B shapes)**, and **guaranteed zero-lookahead point-in-time causality**.
+Designed for quantitative researchers, algorithmic traders, and institutional quantitative pipelines requiring **mathematically rigorous Value Area boundaries (POC, VAH, VAL)**, **Auction Market Theory structural classification (D, P, b, B shapes)**, and **guaranteed zero-lookahead point-in-time causality**.
 
 > **Security & IP Guarantee**: This repository contains **zero API keys, credentials, proprietary trading alpha strategies, or private validation gates**. It is an independent, pure mathematical and algorithmic library implementing public Auction Market Theory literature.
 
@@ -131,7 +131,7 @@ At each iteration:
 
 ## Strict Point-in-Time Causality
 
-A fatal flaw in backtesting is letting intraday bars on day $T$ observe day $T$'s closing Value Area before the session completes.
+A fatal flaw in quantitative research is letting intraday bars on day $T$ observe day $T$'s closing Value Area before the session completes.
 
 ```mermaid
 flowchart LR
